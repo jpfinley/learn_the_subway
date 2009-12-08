@@ -1,0 +1,83 @@
+/* colors
+EFE3C6 - land
+A0C9EC - water
+0C68AF - blue text
+A7D8B7 - green
+8C9AAA - gray
+A84036 - red
+D8B237 - yellow
+*/
+
+/* Sticky Footer
+/* http://www.cssstickyfooter.com/
+/****************************/
+html, body, #wrap { height: 100%; }
+body > #wrap { height: auto; min-height: 100%; }
+#main { padding-bottom: 150px; } /* must be same height as the footer */
+#footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  padding: 1em 3em;
+  height: 150px;
+  clear: both;
+  background-color: #8C8C8C;
+}
+
+/* General stuff
+/****************************/
+a { color: #0C68AF; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:visited { color: #0C68AF; }
+
+p { line-height: 20px; margin: 10px 0; }
+
+strong { font-weight: bold; }
+em { font-style: italic; }
+
+h1 { font-size: 28px; font-weight: bold; }
+h2 { font-size: 16px; font-weight: bold; }
+
+/* Structure Blocks
+/****************************/
+body {
+  font-family: helvetica, arial, freesans, clean, sans-serif;
+  font-size: 13px;
+}
+
+#header { background-color: #000000; padding: 1em 3em; }
+
+#logo { font-size: 3em; color: #0C68AF; font-weight: bold; margin: 0 auto; width: 450px; }
+  #logo a { color: #FFFFFF; text-decoration: none; }
+
+#navigation { position: fixed; top: 6.3em; left: 3em; padding: 1em 2em; background-color: rgba(255, 255, 255, 0.5); }
+  #navigation li { display: block; }
+  #navigation a { padding: 10px 5px 10px 0; display: block; }
+    #navigation a:hover { text-decoration: none; }
+    #navigation a span { display: none; }
+    #navigation a:hover span { display: inline; }
+
+#content {
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  padding: 2em 1em;
+  width: 450px;
+}
+  #content li { margin: 10px 0; line-height: 18px; }
+  #content h2 { padding: 10px 0; }
+  #content ul { padding-left: 20px; }
+  #content li { font-size: 13px; list-style-type: circle; }
+
+/* Clearfix
+/****************************/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix { display: inline-block; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */

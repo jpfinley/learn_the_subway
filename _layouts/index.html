@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/reset.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/index.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <div id="wrap">
+    <div id="main" class="clearfix">
+      <div id="header">
+        <h1 id="logo"><a href="/">Learn the Subway</a></h1>
+      </div>
+      <div id="navigation">
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}<span>&nbsp;&rarr;</span></a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div><!-- navigation -->
+      <div id="content">{{ content }}</div>
+    </div><!-- main -->
+  </div><!-- wrap -->
+  <div id="footer">
+    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/us/88x31.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dc:title" rel="dc:type">Learn the Subway</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.heyfinley.com/" property="cc:attributionName" rel="cc:attributionURL">John Finley</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 United States License</a>.
+    </div>
+</body>
+</html>
