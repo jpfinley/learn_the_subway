@@ -67,6 +67,7 @@ body {
   #content ul { padding-left: 20px; }
   #content li { font-size: 13px; list-style-type: circle; }
 
+#footer a { color: #EEEEEE; }
 /* Clearfix
 /****************************/
 .clearfix:after {
